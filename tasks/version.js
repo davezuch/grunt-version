@@ -90,7 +90,7 @@ module.exports = function(grunt) {
       var g = options.globalNamespace,
           p = options.globalNamespaceProp;
 
-      return '<script>#G = #G || {}; #G.#P = #V</script>'
+      return '<script>window.#G = window.#G || {}; #G.#P = #V</script>'
             .replace(/#G/g, g)
             .replace(/#P/, p)
             .replace(/#V/, version);

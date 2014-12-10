@@ -1,5 +1,5 @@
 {
-  "name": "grunt-version",
+  "name": "cn-version",
   "description": "Inject version number into build files for cache-busting and version-specific code.",
   "version": "0.1.0",
   "homepage": "https://github.com/whoadave/grunt-version",

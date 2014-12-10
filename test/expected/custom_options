@@ -35,7 +35,7 @@
 <![endif]-->
 
 <!-- Vendor and Core JavaScript -->
-<script>CN = CN || {}; CN.version = 1417822443</script>
+<script>window.CN = window.CN || {}; CN.version = 1417822443</script>
 <script src="pub/js/vendor.min.js?v=1417822443"></script>
 <script src="pub/js/citizennet.min.js?v=1417822443"></script>
 <script>if(/local/.test(location.origin)) document.write('<script src="//localhost:35729/livereload.js?v=1417822443"></' + 'script>');</script>
