@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="citizennet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CitizenNet</title>
+
+    {% block css %}
+    <!-- Fonts -->
+    <link href="//citizennet.com/fonts/215945/1613E7C42637CEB50.css?v=1417822443" rel="stylesheet">
+    <!-- Bootstrap and Core CSS -->
+    <link href="pub/css/citizennet.min.css?v=1417822443" rel="stylesheet">
+    {% endblock %}
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <div ng-controller="toastController">
+        <toaster-container toaster-options="{'position-class': 'toast-top-full-width'}"></toaster-container>
+    </div>
+    <div ui-view></div>
+    <div ng-controller="ErrorModalController"></div>
+</div>
+
+{% block javascript %}
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js?v=1417822443"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js?v=1417822443"></script>
+<![endif]-->
+
+<!-- Vendor and Core JavaScript -->
+<script>CN = CN || {}; CN.version = 1417822443</script>
+<script src="pub/js/vendor.min.js?v=1417822443"></script>
+<script src="pub/js/citizennet.min.js?v=1417822443"></script>
+<script>if(/local/.test(location.origin)) document.write('<script src="//localhost:35729/livereload.js?v=1417822443"></' + 'script>');</script>
+{% endblock %}
+</body>
+</html>
